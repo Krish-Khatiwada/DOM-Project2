@@ -15,17 +15,19 @@ container.addEventListener("dblclick", function () {
     }, 1000);
 
     like.style.color = "red"
-    // like.setAttribute =
+    like.setAttribute("class", "ri-heart-fill")
 })
 
 let click = 1
 like.addEventListener("click", function () {
     if (click == 1){
         like.style.color = "red"
+        like.setAttribute("class", "ri-heart-fill")
         click++
    }
     else{
         like.style.color = "#fff"
+        like.setAttribute("class", "ri-heart-line")
         click--
     }
 
